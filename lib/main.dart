@@ -52,7 +52,8 @@ class _LoadingDemoScreenState extends State<LoadingDemoScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('FutureBuilder Loading Patterns'),
+        centerTitle: true,
+        title: Text('FutureBuilder'),
         backgroundColor: Colors.blue[600],
         foregroundColor: Colors.white,
         actions: [IconButton(icon: Icon(Icons.refresh), onPressed: _loadData)],
