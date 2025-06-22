@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class LoadingWidgets {
+class ProfileWidgets {
   static Widget buildSkeletonLoader() {
     return Container(
       padding: EdgeInsets.all(16),

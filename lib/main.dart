@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'profile.dart';
 import 'dashboard.dart';
-import 'list.dart';
+import 'api_service.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FutureBuilder Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
       home: LoadingDemoScreen(),
@@ -97,7 +96,7 @@ class _LoadingDemoScreenState extends State<LoadingDemoScreen> {
       future: _profileFuture,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return LoadingWidgets.buildSkeletonLoader();
+          return ProfileWidgets.buildSkeletonLoader();
         }
         if (snapshot.hasData) {
           return ContentWidgets.buildProfileCard(snapshot.data!);
@@ -112,7 +111,7 @@ class _LoadingDemoScreenState extends State<LoadingDemoScreen> {
       future: _productsFuture,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return LoadingWidgets.buildProgressLoader();
+          return ProfileWidgets.buildProgressLoader();
         }
         if (snapshot.hasData) {
           return ContentWidgets.buildProductList(snapshot.data!);
@@ -127,7 +126,7 @@ class _LoadingDemoScreenState extends State<LoadingDemoScreen> {
       future: _dashboardFuture,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return LoadingWidgets.buildSpinnerLoader();
+          return ProfileWidgets.buildSpinnerLoader();
         }
         if (snapshot.hasData) {
           return ContentWidgets.buildDashboard(snapshot.data!);
