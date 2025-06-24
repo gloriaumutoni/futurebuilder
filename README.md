@@ -1,16 +1,25 @@
-# futurebuilder
+# FutureBuilder Demo
 
-A new Flutter project.
+A Flutter app demonstrating advanced usage of `FutureBuilder` for loading and displaying profile, product list, and dashboard data with custom loading UIs.
 
-## Getting Started
+## Screenshot
 
-This project is a starting point for a Flutter application.
+![App Screenshot](screenshot.png)
+_Replace `screenshot.png` with your actual screenshot file in the project root._
 
-A few resources to get you started if this is your first Flutter project:
+## How to Run
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Make sure you have [Flutter](https://flutter.dev/docs/get-started/install) installed.
+2. Clone this repository.
+3. Run `flutter pub get` to fetch dependencies.
+4. Run `flutter run` to launch the app on your device or emulator.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features / Attributes
+
+- **Profile:** Shows a user profile card with a skeleton loader while loading.
+- **List items:** Displays a list of products with a linear progress indicator during loading.
+- **Dashboard:** Presents a dashboard overview with a spinner loader and summary cards for sales, orders, customers, and revenue.
+
+---
+
+This project demonstrates best practices for asynchronous data loading and custom loading indicators in Flutter.
