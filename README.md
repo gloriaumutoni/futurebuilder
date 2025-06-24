@@ -6,11 +6,11 @@ A Flutter app demonstrating FutureBuilder to load profile, product, and dashboar
 
 ### Loading State
 
-![Loading demonstration](assets/loading_futurebuilder_demonstration.png)
+<img src="assets/loading_futurebuilder_demonstration.png" width="300" />
 
 ### Final UI
 
-![App demonstration](assets/futurebuilder_demonstration.png)
+<img src="assets/futurebuilder_demonstration.png" width="300" />
 
 ## How to Run
 
