@@ -1,11 +1,16 @@
 # FutureBuilder Demo
 
-A Flutter app demonstrating advanced usage of `FutureBuilder` for loading and displaying profile, product list, and dashboard data with custom loading UIs.
+A Flutter app demonstrating FutureBuilder to load profile, product, and dashboard data with custom loaders.
 
 ## Screenshot
 
-![App Screenshot](screenshot.png)
-_Replace `screenshot.png` with your actual screenshot file in the project root._
+### Loading State
+
+![Loading demonstration](assets/loading_futurebuilder_demonstration.png)
+
+### Final UI
+
+![App demonstration](assets/futurebuilder_demonstration.png)
 
 ## How to Run
 
